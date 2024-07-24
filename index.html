@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queseka Construction</title>
+    <link rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Queseka Construction</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#renovations">Renovations</a></li>
+                    <li><a href="#interior">Interior Design</a></li>
+                    <li><a href="#exterior">Exterior Design</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="blue-background">
+        <div class="container">
+            <h2>Welcome to Queseka Construction</h2>
+            <p>Discover our expertise in renovations, interior design, and exterior design.</p>
+            <blockquote>
+                "Building dreams with precision and care."
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="renovations">
+    <div class="container">
+        <h2>Renovations</h2>
+        <div id="comparison">
+            <figure>
+                <div id="divisor"></div>
+            </figure>
+            <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+        </div>
+        <div class="gallery">
+            <!-- Your image pairs with class="image-container" as needed -->
+            <div class="image-container">
+                <img src="before1.jpg" alt="Before 1">
+                <img src="after1.jpg" alt="After 1">
+            </div>
+            <div class="image-container">
+                <img src="before2.jpg" alt="Before 2">
+                <img src="after2.jpg" alt="After 2">
+            </div>
+            <!-- Add more image pairs as needed -->
+        </div>
+    </div>
+</section>
+
+    <section id="interior">
+        <div class="container">
+            <h2>Interior Design</h2>
+            <div class="gallery">
+                <!-- Interior design images -->
+                <div class="image-container">
+                    <img src="interior1.jpg" alt="Interior 1">
+                </div>
+                <div class="image-container">
+                    <img src="interior2.jpg" alt="Interior 2">
+                </div>
+                <!-- Add more interior design images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="exterior">
+        <div class="container">
+            <h2>Exterior Design</h2>
+            <div class="gallery">
+                <!-- Exterior design images -->
+                <div class="image-container">
+                    <img src="exterior1.jpg" alt="Exterior 1">
+                </div>
+                <div class="image-container">
+                    <img src="exterior2.jpg" alt="Exterior 2">
+                </div>
+                <!-- Add more exterior design images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="blue-background">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>123 Construction Way, Cityville</p>
+                <p>Email: info@quesekaconstruction.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Queseka Construction. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
